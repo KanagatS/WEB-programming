@@ -1,0 +1,13 @@
+1 - Установить Денвер
+
+2 - Старт Денвера - Check: "localhost/denwer/" - набрать в строке браузера
+
+3 - В появившемся после запуска в виртуальном Диске в Моем Компьютере - home -> create new folder "mySite" -> create new folder "www" -> create index.php 
+
+4 - Все файлы и рисунки скрипты относительного нового сайта должны быть в этой папке
+
+5 - Перезапустить денвер
+
+6 - В сторке браузера набрать "mySite/"
+
+https://www.webstepbook.com/supplements/labsection/lab4-buyagrade/

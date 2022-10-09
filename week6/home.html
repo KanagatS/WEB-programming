@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- LAB link https://www.webstepbook.com/supplements/labsection/lab4-buyagrade/ -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB 6</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Welcome to the Yandex Music subscription payment page</h1>
+
+    <hr />
+
+    <p>
+      In order for you to have a subscription, you need to pay 850 tenge. Please
+      enter your credit card details to pay. This procedure will need to be
+      performed only once, in the following months the money will be debited
+      automatically.
+    </p>
+
+    <div class="inf_block">
+      <h2 style="font-size: 26px">Please, enter card details :)</h2>
+
+      <form action="index.php" method="post" style="text-align: center">
+        <h3>Name</h3>
+        <input type="text" name="name" />
+
+        <hr />
+
+        <h3>Country</h3>
+        <select name="country">
+          <option value="">(Select your country)</option>
+          <option>Kazakhstan</option>
+          <option>Russia</option>
+          <option>Ukrain</option>
+          <option>Kyrgyzstan</option>
+          <option>Belarus</option>
+        </select>
+
+        <hr />
+
+        <h3>Credit card (16 digits, without space)</h3>
+        <input type="text" name="cardnumber" /><br />
+        <label><input type="radio" name="cardtype" value="Visa" />VISA</label>
+        <label><input type="radio" name="cardtype" value="Mastercard" />MasterCard</label>
+    </div>
+      
+    <br />
+      
+    <div>
+      <input type="submit" value="- SUBMIT -" />
+    </div>
+    
+    </form>
+  </body>
+</html>

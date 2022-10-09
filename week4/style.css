@@ -1,0 +1,21 @@
+h1 {
+  font-family: "Raleway", Arial, sans-serif;
+  letter-spacing: 5px;
+}
+h2 {
+  letter-spacing: 1px;
+  width: 100%;
+}
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+#text {
+  font-size: 50px;
+}
+#dubai {
+  font-size: 70px;
+  letter-spacing: 25px;
+}
+img {
+  width: 100%;
+}

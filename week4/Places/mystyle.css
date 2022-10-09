@@ -1,0 +1,17 @@
+h4 {
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+}
+body {
+  background-color: silver;
+}
+h1 {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  color: blueviolet;
+  text-align: center;
+}
+img {
+  border: 5px solid black;
+}

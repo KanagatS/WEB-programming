@@ -1,0 +1,58 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+html {
+  background-color: violet;
+}
+
+body {
+  width: 600px;
+  margin: 1em auto;
+  background-color: aquamarine;
+  border: 7px solid red;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+hr {
+  width: 90%;
+  border: 2px solid red;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin: 12px;
+}
+
+input[type="submit"] {
+  font-size: 35px;
+  width: 100%;
+  border: 2.5px solid green;
+  border-radius: 15px;
+  background-color: antiquewhite;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inf_block {
+  border: 3px solid brown;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.inf_block hr {
+  width: 90%;
+  border: 2px solid brown;
+}
