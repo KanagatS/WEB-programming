@@ -24,20 +24,21 @@
     $name = $_REQUEST['name'];
     $country = $_REQUEST['country'];
     $cardnumber = $_REQUEST['cardnumber'];
+    $cardtype = $_REQUEST['cardtype'];
 
-    if ($name == "" || $country == "" || $cardnumber == "" || !isset($_REQUEST['cardtype'])) {
+    if ($name == "" || $country == "" || $cardnumber == "" || !isset($cardtype)) {
     ?>
         <h1>Cmon buddy</h1>
         <p>You filled nothing. Don't joke like that.</p>
         <p><a href="home.html">Try again bro!</a></p>
     <?php
-    } elseif (($_REQUEST['cardtype'] == "visa" && $cardnumber[0] != "4")) {
+    } elseif ($cardtype == "visa" && $cardnumber[0] != "4") {
     ?>
         <h1>Cmon buddy</h1>
         <p>Visa cards number should start from "4"</p>
         <p><a href="home.html">Try again bro!</a></p>
     <?php
-    } elseif ($_REQUEST['cardtype'] == "mastercard" && $cardnumber[0] != "5") {
+    } elseif ($cardtype == "mastercard" && $cardnumber[0] != "5") {
     ?>
         <h1>Cmon buddy</h1>
         <p>MastedCard cards number should start from "5"</p>
@@ -50,7 +51,6 @@
         <p><a href="home.html">Try again bro!</a></p>
     <?php
     } else {
-        $cardtype = $_REQUEST['cardtype'];
     ?>
         <h1>Good news!</h1>
 
