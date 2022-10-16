@@ -22,7 +22,7 @@
 
 .main {
   display: flex;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   padding: 24px 24px 0px 57px;
 }
 
