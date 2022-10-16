@@ -1,0 +1,75 @@
+* {
+  font-family: sans-serif, "Roboto", "Arial";
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.left_side {
+  /* border: 2px solid black; */
+  width: 970px;
+}
+
+.left_side p {
+  font-size: 14px;
+  color: #606060;
+}
+
+.right_side_tab {
+  border: 2px solid black;
+  width: 400px;
+  margin-left: 20px;
+}
+
+.main {
+  display: flex;
+  border: 2px solid green;
+  padding: 24px 24px 0px 57px;
+}
+
+#trend_text {
+  font-size: 12px;
+  color: #065fd4;
+}
+
+.bolded {
+  font-size: 14px;
+  color: #131313;
+  font-weight: bold;
+}
+
+#menu_buttons {
+  display: flex;
+}
+
+#menu_buttons span {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.style-scope {
+  cursor: pointer;
+}
+
+#subscription_div {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 4px 0px 4px 10px;
+}
+
+#channel_img {
+  border-radius: 50%;
+  width: 36px;
+  cursor: pointer;
+}
+
+#subscription_image {
+  width: 150px;
+  height: 37px;
+  cursor: pointer;
+  margin-left: 630px;
+}
+
+.comments {
+  display: flex;
+}
