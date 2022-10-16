@@ -1,12 +1,379 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="youtube-logo-png-2061.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>YouTube</title>
   </head>
+
   <body>
-    <h1>YouTube</h1>
+    <div class="header">
+      <div class="logo-container">
+        <i class="ri-menu-line"></i>
+        <div class="logo">
+          <div class="logo-img">
+            <img src="youtube-logo-png-2061.png" alt="YT Logo" />
+          </div>
+          <h1 id="logo-txt">YouTube</h1>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <form action="">
+          <input type="text" placeholder="Введите запрос" />
+        </form>
+        <button class="search"><i class="ri-search-line"></i></button>
+        <button class="mic"><i class="ri-mic-fill"></i></button>
+      </div>
+
+      <div class="profile-container">
+        <i class="ri-video-add-line"></i>
+        <i class="ri-grid-fill"></i>
+        <i class="ri-notification-4-line"></i>
+        <div class="profile-box">
+          <img
+            src="https://i1.photo.2gis.com/images/profile/30258560049294756_0a4a.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="sidebar">
+        <div class="sidebar-items">
+          <a class="sidebar-item"><i class="ri-home-5-line"></i>Главная</a>
+          <a class="sidebar-item"><i class="ri-compass-3-line"></i>Навигатор</a>
+          <a class="sidebar-item"
+            ><i class="ri-wireless-charging-line"></i>Shorts</a
+          >
+          <a class="sidebar-item"><i class="ri-rss-line"></i>Подписки</a>
+
+          <hr />
+
+          <a class="sidebar-item"><i class="ri-links-line"></i>Библиотека</a>
+          <a class="sidebar-item"><i class="ri-history-line"></i>История</a>
+          <a class="sidebar-item"><i class="ri-video-line"></i>Ваши видео</a>
+          <a class="sidebar-item"><i class="ri-time-line"></i>Смотреть позже</a>
+          <a class="sidebar-item"
+            ><i class="ri-play-list-2-line"></i>Все видео</a
+          >
+          <a class="sidebar-item"
+            ><i class="ri-arrow-down-s-line"></i>Развернуть</a
+          >
+
+          <hr />
+
+          <a class="sidebar-item"
+            ><i class="ri-keyboard-box-line"></i>Видеоигры</a
+          >
+          <a class="sidebar-item"><i class="ri-live-line"></i>Эфир</a>
+          <a class="sidebar-item"><i class="ri-award-line"></i>Спорт</a>
+
+          <hr />
+
+          <a class="sidebar-item"
+            ><i class="ri-settings-5-line"></i>Настройки</a
+          >
+          <a class="sidebar-item"><i class="ri-flag-line"></i>Жалобы</a>
+          <a class="sidebar-item"><i class="ri-question-line"></i>Справки</a>
+          <a class="sidebar-item"
+            ><i class="ri-feedback-line"></i>Отправить отзыв</a
+          >
+        </div>
+      </div>
+
+      <div id="outer">
+        <div class="top_tabs">
+          <div class="in_tab_icons" id="in_trend">
+            <img
+              src="https://www.youtube.com/img/explore/destinations/icons/trending_color_64.png"
+              alt="trend"
+            />
+            <br />
+            <h3>В тренде</h3>
+          </div>
+          <div class="in_tab_icons" id="music">
+            <img
+              src="https://www.youtube.com/img/explore/destinations/icons/music_color_64.png"
+              alt="music"
+            />
+            <br />
+            <h3>Музыка</h3>
+          </div>
+          <div class="in_tab_icons" id="videogames">
+            <img
+              src="https://www.youtube.com/img/explore/destinations/icons/gaming_color_64.png"
+              alt="games"
+            />
+            <br />
+            <h3>Видеоигры</h3>
+          </div>
+          <div class="in_tab_icons" id="sport">
+            <img
+              src="https://www.youtube.com/img/explore/destinations/icons/sports_color_64.png"
+              alt="sport"
+            />
+            <br />
+            <h3>Спорт</h3>
+          </div>
+        </div>
+
+        <br /><br />
+        <h3>Популярные видео</h3>
+        <br />
+
+        <!-- FIRST -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/ErBrs6HqdWg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByqtMJZqt_7aIRX3w8LX9j14m3YQ"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">
+              Қызымды құлдықта ұстап отырсыңдар! | Аппақ келін 2 маусым 1 серия
+            </h5>
+
+            <h6 class="channel_name">
+              SALEM EPISODES • 1,8 млн просмотров 2 дня назад
+            </h6>
+
+            <p>
+              2-ШІ СЕРИЯ МҰНДА 👉🏻🔥 https://bit.ly/3Tf2YzW «Пацанская история» 6
+              қазаннан бастап Қазақстанның кинотеатрларында...
+            </p>
+          </div>
+        </div>
+
+        <!-- Second -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/zJ0Z-PyA8WI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDezpioRU8nlAwFbwQo5DaWUCXBHg"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">JaiBattle | Арнайы жоба | Жайдарман 2022</h5>
+
+            <h6 class="channel_name">
+              Jaidarman OFFICIAL / JCI • 325 тыс. просмотров 23 часа назад
+            </h6>
+
+            <p>
+              00:00 Бастаймыз 10:00 Кармакшы курамасы 25:07 Байдын Балдары 46:20
+              Бахтияр Тайлакбаев 58:07 рудный 1:12:35 Ату 1:24:10 Блогерл...
+            </p>
+          </div>
+        </div>
+
+        <!-- Third -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/2ySfYvpMEQw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAFvVi5mQrfFIbqJyV7Z5MdfedFwg"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">Жездуха 36-серия</h5>
+
+            <h6 class="channel_name">
+              Million Show • 3,7 млн просмотров • 13 дней назад
+            </h6>
+
+            <p>
+              https://instagram.com/mama_podium?igshid=MmIxOGMzMTU= @mama_podium
+              @mama_podium @mama_podium Ана мен бала супермаркеті Перзентханаға
+              жылдам әрі...
+            </p>
+          </div>
+        </div>
+
+        <!-- Fourth -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/k0plRt5-eUE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCyqRcoEhu1oy9w_gZsy88e4AHOOA"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">
+              Рахмон – Путину: Мы хотим, чтобы нас уважали
+            </h5>
+
+            <h6 class="channel_name">
+              AKIpress news • 6,2 млн просмотров • 2 дня назад
+            </h6>
+
+            <p>
+              Президент Таджикистана Эмомали Рахмон 14 октября в Астане на
+              саммите «Центральная Азия – Россия» высказалс...
+            </p>
+          </div>
+        </div>
+
+        <!-- Fifth -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/CokvdUS0fCA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDSCBRmXsfLFzcY5FcSItatxcP_GQ"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">Новые Пацанки. 3 выпуск. Премьера</h5>
+
+            <h6 class="channel_name">
+              Телеканал ПЯТНИЦА • 4,1 млн просмотров • 3 дня назад
+            </h6>
+
+            <p>
+              Новые Пацанки — четверг 19:00 на телеканале ПЯТНИЦА! Вся правда о
+              новых участницах: https://t.me/new_pacanki Закажи...
+            </p>
+          </div>
+        </div>
+
+        <!-- Sixth -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://www.proplan.ru/sites/owners.proplan.ru/files/styles/image_576/public/2020-11/osobennosti-psihicheskogo-i-fizicheskogo-razvitiya.jpg?itok=MaPHmKn6"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">НАШЕ НОВОЕ ПОПОЛНЕНИЕ 🐣</h5>
+
+            <h6 class="channel_name">
+              Family Box • 7 млн просмотров • 8 дней назад
+            </h6>
+          </div>
+        </div>
+
+        <!-- Seventh -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/odCgyelt-9E/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAi-vAdYx46dib-N1FS-sJR1_lvFg"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">Новые Пацанки. 2 выпуск. Премьера</h5>
+
+            <h6 class="channel_name">
+              Телеканал ПЯТНИЦА • 6,2 млн просмотров • 10 дня назад
+            </h6>
+
+            <p>
+              Новые Пацанки — четверг 19:00 на телеканале ПЯТНИЦА! Вся правда о
+              новых участницах: https://t.me/new_pacanki Закажи...
+            </p>
+          </div>
+        </div>
+
+        <!-- Eighth -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://bnmusic.kz/wp-content/uploads/2020/10/%D0%9A%D0%92%D0%9D-%D0%9A%D0%B0%D0%BC%D1%8B%D0%B7%D1%8F%D0%BA%D0%B8.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">
+              Камызякский тир 😅 #тнт #shorts #юмор #азаматмусагалиев #камызяки
+              #шоу
+            </h5>
+
+            <h6 class="channel_name">
+              Чувствуй наши Shorts • 8,8 млн просмотров • 12 дней назад
+            </h6>
+
+            <p>
+              Телеканал ТНТ в соц. сетях: YouTube:
+              https://www.youtube.com/channel/UCFKDcjx5ekaoMog_9zw82fA YouTube
+              Shorts: https://www.youtube.com/channel/UCmVoIfd7II6lVCTovtncaNQ
+              VK:...
+            </p>
+          </div>
+        </div>
+
+        <!-- Ninth -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/MMvGAMW47hI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD-eqUsc1T7VEJIJlGYMMx-x3dBsg"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">
+              Аппақ келін 2 маусым | Ресми трейлер | Тұсаукесер 14/10/22 +
+              КОНКУРС
+            </h5>
+
+            <h6 class="channel_name">
+              SALEM EPISODES • 327 тыс. просмотров • 6 дней назад
+            </h6>
+
+            <p>
+              ❗️КОНКУРС❗️ Туысқандар, оқырмандар санын 1.000.000 жеткізейік,
+              сол үшін біз конкурс жариялаймыз! Сыйлыққа:...
+            </p>
+          </div>
+        </div>
+
+        <!-- Tenth -->
+        <div class="video">
+          <div class="video_img">
+            <img
+              src="https://i.ytimg.com/vi/N8ubzqjRQgE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBF-ecpsfRCHEOM9-scLgI_3QiPhQ"
+              alt=""
+            />
+          </div>
+
+          <div class="video_text">
+            <h5 class="video_name">
+              Пропаганда – топливо войны / Propaganda: Fuelling War
+            </h5>
+
+            <h6 class="channel_name">
+              вДудь • 6,1 млн просмотров • 5 дней назад
+            </h6>
+
+            <p>
+              Переходи по ссылке https://surfshark.deals/YURY – используй
+              промокод YURY и получи скидку 83% и 3 месяца в подарок! ДАННОЕ...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
