@@ -14,10 +14,11 @@
   color: #606060;
 }
 
-.right_side_tab {
-  border: 2px solid black;
+.right_side {
+  /* border: 2px solid black; */
   width: 400px;
   margin-left: 20px;
+  padding-top: 5px;
 }
 
 .main {
@@ -51,10 +52,30 @@
 }
 
 #subscription_div {
-  display: flex;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
-  padding: 4px 0px 4px 10px;
+  padding: 4px 4px 0px 10px;
+}
+
+#name_of_channel span {
+  cursor: pointer;
+}
+
+#subscription_button {
+  background-color: #cc0000;
+  border-radius: 2px;
+  width: 142px;
+  height: 36px;
+  float: right;
+  cursor: pointer;
+}
+
+#subscription_button p {
+  color: white;
+  text-align: center;
+  line-height: 10px;
+  font-family: sans-serif, "Roboto", "Noto";
+  font-size: 14px;
 }
 
 #channel_img {
@@ -63,13 +84,42 @@
   cursor: pointer;
 }
 
-#subscription_image {
-  width: 150px;
-  height: 37px;
-  cursor: pointer;
-  margin-left: 630px;
-}
-
 .comments {
   display: flex;
+}
+
+.right_side_video {
+  /* border: 2px solid black; */
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.picture_of_video {
+  width: 168px;
+  height: 94px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.picture_of_video img {
+  width: 168px;
+  height: 94px;
+  margin-right: 8px;
+}
+
+.name_of_video p {
+  font-size: 14px;
+  margin: 0px;
+  color: black;
+}
+
+.channel_name p {
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 2.5px;
+}
+
+.video_info p {
+  margin-top: 0px;
+  font-size: 12px;
 }
