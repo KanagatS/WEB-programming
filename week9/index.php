@@ -1,11 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB8</title>
+    <title>Registration completed</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -15,30 +17,41 @@
     $password = "";
     $database = "LAB8";
 
+    $email = $_REQUEST['email'];
+    $pswrd = $_REQUEST['psw'];
+
     $conn = mysqli_connect($servername, $username, $password, $database);
 
-    // $sql = "CREATE DATABASE LAB8";
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
 
-    // $sql = "CREATE TABLE users (
-    //     user VARCHAR(30) NOT NULL,
-    //     pass VARCHAR(30) NOT NULL
-    //     )";
+    $sql = "INSERT INTO Users (email, pswrd) VALUES ('$email', '$pswrd')";
 
-    // $sql = "INSERT INTO users (user, pass)
-    //         VALUES ('Kanagat', '26102022'), ('Kana', 'qwerty')";
+    if (mysqli_query($conn, $sql)) {
+        file_put_contents("users.txt", $email . "; " . $pswrd . "\n", FILE_APPEND);
+    ?>
+        <div class="inf_block">
+            <h1 style="color: yellowgreen; text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;">
+                Registration completed successfully.
+            </h1>
 
-    $user_in = $_REQUEST['user_out'];
-    $pass_in = $_REQUEST['pass_out'];
+            <h2>Please don't forget your data and write it down somewhere.</h2>
 
-    // Asking for data from table
-    $sql = "SELECT * from users WHERE user = $user_in";
+            <hr />
 
-    $result = mysqli_query($conn, $sql);
+            <h2 style="font-style: italic">Email: <?php echo $email; ?></h2>
+            <h2 style="font-style: italic">Password: <?php echo $pswrd; ?></h2>
 
-    if (mysqli_num_rows($result) > 0) {
-        echo "YES";
+            <hr />
+
+            <a href="main.html" style="color: blue">
+                <h2>Go to login page</h2>
+            </a>
+        </div>
+    <?php
     } else {
-        echo "0 results";
+        echo "Error with SQL request: " . mysqli_error($conn);
     }
 
     mysqli_close($conn);

@@ -50,7 +50,7 @@ a {
   border: 2px solid brown;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
   width: 80%;
   padding: 12px 20px;
@@ -62,7 +62,7 @@ input[type="password"] {
   background-color: white;
 }
 
-input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
   background-color: gainsboro;
   outline: none;
