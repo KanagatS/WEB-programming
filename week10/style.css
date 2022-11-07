@@ -1,0 +1,33 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#text {
+  font-size: 30px;
+  color: purple;
+  text-align: center;
+}
+
+.block {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+}
