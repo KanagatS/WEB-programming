@@ -1,0 +1,100 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+html {
+  background-color: violet;
+}
+
+body {
+  width: 600px;
+  margin: 4px auto;
+  background-color: aquamarine;
+  border: 7px solid red;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+hr {
+  width: 90%;
+  border: 2px solid red;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin: 12px;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.inf_block {
+  border: 3px solid brown;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.inf_block hr {
+  width: 90%;
+  border: 2px solid brown;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 2px solid brown;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: gainsboro;
+  outline: none;
+}
+
+input[type="submit"] {
+  font-size: 35px;
+  border: 2.5px solid green;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  width: 80%;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: goldenrod;
+}
+
+.register_button {
+  width: 80%;
+  margin: auto;
+  border: 2.5px solid green;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.register_button:hover {
+  background-color: yellowgreen;
+}
+
+#log_out_btn {
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 15px;
+}
