@@ -1,0 +1,95 @@
+.nav-toggle {
+  display: block;
+  padding: 27px 19px;
+  width: 18px;
+  height: 2px;
+  border: 0;
+  box-sizing: content-box;
+  background-clip: content-box;
+  transition: background-color 500ms ease-in-out 250ms;
+  background-color: #000;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
+.nav-toggle:before,
+.nav-toggle:after {
+  position: relative;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #000;
+  transition: transform 500ms ease-in-out;
+}
+
+.nav-toggle:before {
+  top: -6px;
+}
+
+.nav-toggle:after {
+  bottom: -4px;
+}
+
+.nav-toggle__text {
+  display: none;
+}
+
+.nav-toggle--active {
+  background-color: rgba(255, 255, 255, 0);
+  transition-delay: 0s;
+}
+
+.nav-toggle--active:before {
+  transform: translateY(6px) rotate(-225deg);
+}
+
+.nav-toggle--active:after {
+  transform: translateY(-6px) rotate(225deg);
+}
+
+/** * Page theme */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+.example {
+  margin: 2rem auto;
+  max-width: 640px;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: #000;
+}
+
+pre {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #000;
+  overflow-y: auto;
+}
+
+.header__heading {
+  font-size: 2.4rem;
+}
+
+.header__intro {
+  font-size: 1.6rem;
+  color: #f09;
+}
+
+.example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #000;
+}
