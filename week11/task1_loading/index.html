@@ -11,17 +11,29 @@
     #myProgress {
       width: 100%;
       background-color: antiquewhite;
+      border: 3px solid black;
+      border-radius: 15px;
     }
 
     #myBar {
       width: 1%;
       height: 50px;
       background-color: greenyellow;
+      border-radius: 15px;
     }
 
     #btn {
       margin: auto;
-      font-size: 20px;
+      font-size: 200px;
+      height: 500px;
+      width: 900px;
+      border: 5px solid black;
+      border-radius: 20px;
+      background-color: aquamarine;
+    }
+
+    #btn:hover {
+      background-color: aqua;
     }
   </style>
 
@@ -34,7 +46,9 @@
 
     <br />
 
-    <button id="btn" onclick="move()">Start</button>
+    <div style="text-align: center">
+      <button id="btn" onclick="move()">Start</button>
+    </div>
 
     <script>
       var go = 0;
