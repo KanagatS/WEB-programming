@@ -97,16 +97,16 @@
 
   <script>
     var isConnect = "<?php echo $connect; ?>";
-    alert(isConnect);
+    // alert(isConnect);
 
     function valid() {
-      // if (connect == 1) {
-      //   document.getElementById("good").style.display = "block";
-      //   document.getElementById("bad").style.display = "none";
-      // } else {
-      //   document.getElementById("bad").style.display = "block";
-      //   document.getElementById("good").style.display = "none";
-      // }
+      if (connect == 1) {
+        document.getElementById("good").style.display = "block";
+        document.getElementById("bad").style.display = "none";
+      } else {
+        document.getElementById("bad").style.display = "block";
+        document.getElementById("good").style.display = "none";
+      }
     }
   </script>
 </body>
