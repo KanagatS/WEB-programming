@@ -1,0 +1,29 @@
+Web programming END TERM (social media)
+
+You need to create a site according to the given theme. 
+Project should look like a full-fledged site (front + back). 
+I advise you to start doing research in similar web sites. 
+
+List of requirements: (10 points):
+1. Registration.
+2. User page (settings: confidence, info, profile page)
+3. Main page (publication of friends)
+4. Search (by name)
+5. Publications (likes, dislikes, comments)
+6. Friends 
+7. Social with video/photo filters for video/photo. Cutting, saving video. Search.
+
+Additional requirements: (4 points):
+1. Improved design. 
+2. Group of users by interest 
+3. Tag the friend by name
+
+BE READY TO TEST YOUR SOCIAL NETWORK FOR BUGS!
+BE READY TO ANSWER ALL APPROPRIATE QUESTIONS!
+
+NOTES:
+● The marks in the group could vary for each member, depending on the answers. 
+● In case of importing files from other (not your works) – the project will not be marked.
+● Do not use ready scripts and frameworks! Project will be canceled.
+
+
