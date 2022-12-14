@@ -1,0 +1,661 @@
+'****************************************************************
+@ device pic12F675, CPD_OFF, PROTECT_ON, MCLR_OFF, PWRT_ON, WDT_Off, INTRC_OSC_NOCLKOUT
+
+key      var gpio.5
+led1     var gpio.0
+led2     var gpio.1
+buf      var byte
+ledonoff var byte
+eeprom 0,[0]
+eeprom 8,["EKrivonogov@mail.ru vip-cxema.org "]
+eeprom 42,["https://www.youtube.com/devil220378 "]
+
+trisio = %00010000
+CMCON  = %00000111 ' Отключаем встроенный компаратор
+ANSEL  = %00000000 ' Set AN0 analog
+adcon0 = %00000000 'АЦП
+OPTION_REG.7 = 0 
+WPU    = %00100000 ' Подтягивающие резисторы (автоматически выключаются при установке порта на вывод)
+led1 = 0
+led2 = 0
+key = 0
+buf = 0
+read 0,ledonoff
+'**********************************************************
+main:
+Gosub knopka
+if ledonoff = 0  then ind1
+if ledonoff = 1  then ind2
+if ledonoff = 2  then ind3
+if ledonoff = 3  then ind4
+if ledonoff = 4  then ind5
+if ledonoff = 5  then ind6
+if ledonoff = 6  then ind7
+if ledonoff = 7  then ind8
+if ledonoff = 8  then ind9
+if ledonoff = 9  then ind10
+if ledonoff = 10 then ind11
+if ledonoff = 11 then ind12
+if ledonoff = 12 then ind13
+if ledonoff = 13 then ind14
+if ledonoff = 14 then ind15
+if ledonoff = 15 then ind16
+if ledonoff = 16 then ind17
+'*******************
+goto main
+
+'**********************************************************
+ind1:
+led1 = 1
+Gosub knopka
+pause 80
+led1 = 0
+Gosub knopka
+pause 80 
+led1 = 1
+Gosub knopka
+pause 80
+led1 = 0
+Gosub knopka
+pause 400
+led2 = 1
+Gosub knopka
+pause 80
+led2 = 0
+Gosub knopka
+pause 80 
+led2 = 1
+Gosub knopka
+pause 80
+led2 = 0
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+goto main
+'**********************************************************
+ind2:
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 80
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 80 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 80
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka 
+goto main
+'**********************************************************
+ind3:
+led1 = 1
+Gosub knopka
+pause 80
+led1 = 0
+Gosub knopka
+pause 80 
+led1 = 1
+Gosub knopka
+pause 80
+led1 = 0
+Gosub knopka
+pause 80
+led1 = 1
+Gosub knopka
+pause 80
+led1 = 0
+Gosub knopka
+pause 400
+led2 = 1
+Gosub knopka
+pause 80
+led2 = 0
+Gosub knopka
+pause 80 
+led2 = 1
+Gosub knopka
+pause 80
+led2 = 0
+Gosub knopka
+pause 80
+led2 = 1
+Gosub knopka
+pause 80
+led2 = 0
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+goto main
+'**********************************************************
+ind4:
+led1 = 0
+led2 = 0
+Gosub knopka
+goto main
+'**********************************************************
+ind5:
+led1 = 1
+led2 = 1
+Gosub knopka
+goto main
+'**********************************************************
+ind6:
+led1 = 1
+led2 = 0
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka 
+led1 = 0
+led2 = 1
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+goto main
+'**********************************************************
+ind7:
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka 
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+goto main
+'**********************************************************
+ind8:                    'Воспроизводим режим номер 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 80
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 80 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 80
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka 
+goto main                'Идём на метку main
+'**********************************************************
+ind9:
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 80 
+led1 = 0
+led2 = 0
+pause 80
+Gosub knopka
+goto main
+'**********************************************************
+ind10:
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 100
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60 
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 100 
+goto main                'Идём на метку main
+'**********************************************************
+ind11:
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 80
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 80 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 80
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+goto main                'Идём на метку main
+'**********************************************************
+ind12:                    'Воспроизводим режим номер 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 150
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+pause 250   'центр режима
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60 
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 150
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60 
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+pause 300  
+goto main                'Идём на метку main
+'**********************************************************
+ind13:                    'Воспроизводим режим номер 
+led1 = 1
+pause 50
+led1 = 0
+Gosub knopka
+pause 50 
+led2 = 1
+pause 50
+led2 = 0
+Gosub knopka
+pause 50
+goto main                'Идём на метку main
+'**********************************************************
+ind14:                    'Воспроизводим режим SOS
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 100
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 100
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 100
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100
+'***********
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 300
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 300
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 300
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100
+'***********
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 100
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 100
+led1 = 0
+led2 = 0
+Gosub knopka
+pause 100 
+led1 = 1
+led2 = 1
+Gosub knopka
+pause 100
+led1 = 0
+led2 = 0
+Gosub knopka
+'***********
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+pause 200
+Gosub knopka
+goto main                'Идём на метку main
+'**********************************************************
+'**********************************************************
+ind15:                    'Воспроизводим режим номер 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 150
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+'центр режима
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60 
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 150
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+goto main                'Идём на метку main
+'**********************************************************
+'**********************************************************
+ind16:                    'Воспроизводим режим номер 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+'центр режима
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60 
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+goto main                'Идём на метку main
+'**********************************************************
+'**********************************************************
+ind17:                    'Воспроизводим режим номер 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+pause 60 
+led1 = 1
+pause 60
+led1 = 0
+Gosub knopka
+'*************
+'центр режима
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+pause 60 
+led2 = 1
+pause 60
+led2 = 0
+Gosub knopka
+'*************
+goto main                'Идём на метку main
+'**********************************************************
+Knopka:
+button key, 0,255,255,buf,1,ledmod
+
+return
+'**********************************************************
+ledmod:
+ledonoff = ledonoff + 1
+if ledonoff > 16 then 
+ledonoff = 0
+endif
+write 0,ledonoff
+return'goto main
+'**********************************************************
+
